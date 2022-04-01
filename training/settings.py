@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "debug_toolbar",
     "corsheaders",
-    "oauth2_provider",
+    # "oauth2_provider",
     "django_filters",
     "myapp",
 ]
@@ -190,20 +190,20 @@ JSON_API_PLURALIZE_TYPES = True
 # django-oauth-toolkit settings
 CORS_ORIGIN_ALLOW_ALL = True
 
-OAUTH2_PROVIDER = {
-    # here's where we add the external introspection endpoint:
-    "RESOURCE_SERVER_INTROSPECTION_URL": os.environ.get(
-        "OAUTH2_SERVER", "https://oauth-test.cc.columbia.edu"
-    )
-    + "/as/introspect.oauth2",
-    "RESOURCE_SERVER_INTROSPECTION_CREDENTIALS": (
-        os.environ.get("RESOURCE_SERVER_ID", "demo_resource_server"),
-        os.environ.get(
-            "RESOURCE_SERVER_SECRET",
-            "wL0pgS5RcNOgdOSSmejzZNA605d3MtkoXMVSDaJxmaTU70XnYQPOabBAYtfkWXay",
-        ),
-    ),
-}
+# OAUTH2_PROVIDER = {
+#     # here's where we add the external introspection endpoint:
+#     "RESOURCE_SERVER_INTROSPECTION_URL": os.environ.get(
+#         "OAUTH2_SERVER", "https://oauth-test.cc.columbia.edu"
+#     )
+#     + "/as/introspect.oauth2",
+#     "RESOURCE_SERVER_INTROSPECTION_CREDENTIALS": (
+#         os.environ.get("RESOURCE_SERVER_ID", "demo_resource_server"),
+#         os.environ.get(
+#             "RESOURCE_SERVER_SECRET",
+#             "wL0pgS5RcNOgdOSSmejzZNA605d3MtkoXMVSDaJxmaTU70XnYQPOabBAYtfkWXay",
+#         ),
+#     ),
+# }
 
 # debug logging
 LOGGING = {
@@ -231,10 +231,10 @@ LOGGING = {
             "level": "DEBUG",
             "handlers": ["console"],
         },
-        "oauth2_provider": {
-            "level": "DEBUG",
-            "handlers": ["console"],
-        },
+        # "oauth2_provider": {
+        #     "level": "DEBUG",
+        #     "handlers": ["console"],
+        # },
         "myapp": {
             "level": "INFO",
             "handlers": ["console"],

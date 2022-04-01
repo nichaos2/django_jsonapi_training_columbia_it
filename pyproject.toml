@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django_jsonapi_training_columbia_it"
+version = "0.1.0"
+description = "tutorial from http://www.columbia.edu/~alan/django-jsonapi-training/building.html"
+authors = ["nioannou"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "3.2.12"
+django-cors-headers = "3.2.1"
+djangorestframework = "3.13.0"
+drf-yasg = "^1.20.0"
+PyYAML = "^6.0"
+drf-yasg-json-api = "^0.9.1"
+djangorestframework-jsonapi = {extras = ["openapi"], version = "^5.0.0"}
+
+[tool.poetry.dev-dependencies]
+black = "21.7b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

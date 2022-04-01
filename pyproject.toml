@@ -13,6 +13,7 @@ drf-yasg = "^1.20.0"
 PyYAML = "^6.0"
 drf-yasg-json-api = "^0.9.1"
 djangorestframework-jsonapi = {extras = ["openapi"], version = "^5.0.0"}
+django-debug-toolbar = "^3.2.4"
 
 [tool.poetry.dev-dependencies]
 black = "22.3.0"

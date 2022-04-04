@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "debug_toolbar",
     "corsheaders",
-    # "oauth2_provider",
+    "oauth2_provider",
     "django_filters",
     "myapp",
 ]
@@ -156,7 +156,7 @@ STATIC_URL = "/static/"
 
 # DRF and DJA settings
 REST_FRAMEWORK = {
-    "PAGE_SIZE": 10,
+    "PAGE_SIZE": 3,
     "EXCEPTION_HANDLER": "rest_framework_json_api.exceptions.exception_handler",
     "DEFAULT_PAGINATION_CLASS": "rest_framework_json_api.pagination.JsonApiPageNumberPagination",
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework_json_api.pagination.JsonApiLimitOffsetPagination',

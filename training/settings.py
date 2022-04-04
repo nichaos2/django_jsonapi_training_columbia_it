@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "corsheaders",
     "oauth2_provider",
-    "django_filters",
+    # "django_filters", # is this needed
     "myapp",
 ]
 

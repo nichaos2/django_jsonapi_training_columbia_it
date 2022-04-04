@@ -16,7 +16,7 @@ media
 migrations
 
 # we use poetry 
-requirements.txt
+requirements_general.txt
 requirements_poetry.txt
 # Backup files # 
 *.bak 

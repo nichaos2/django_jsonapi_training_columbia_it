@@ -12,5 +12,5 @@ course_recipe = Recipe(
 course_term_recipe = Recipe(
     CourseTerm,
     term_identifier=seq("term_identifier"),
-    course = foreign_key(course_recipe)
+    course=foreign_key(course_recipe),
 )

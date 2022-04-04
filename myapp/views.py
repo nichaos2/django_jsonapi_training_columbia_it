@@ -37,6 +37,7 @@ REQUIRED_SCOPES_ALTS = {
 # auth-none scope is not generally available unless the client app
 # is a trusted program that has properly secured its OAuth 2 client credentials
 
+
 class MyDjangoModelPermissions(DjangoModelPermissions):
     """
     Override DjangoModelPermissions to require view permission as well.

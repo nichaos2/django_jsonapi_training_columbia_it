@@ -2,7 +2,8 @@ import pytest
 from model_bakery import baker
 from myapp.models import Course, CourseTerm
 
-
+# this is a simple test to check how tox works
+# TODO: more tests for views , serializers?
 class TestModels:
 
     baker_path = "myapp.tests.baker_recipes"

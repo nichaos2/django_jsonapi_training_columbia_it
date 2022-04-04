@@ -5,16 +5,16 @@ description = "tutorial from http://www.columbia.edu/~alan/django-jsonapi-traini
 authors = ["nioannou"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
 Django = "3.2.12"
 django-cors-headers = "3.2.1"
-djangorestframework = "3.13.0"
-drf-yasg = "^1.20.0"
-PyYAML = "^6.0"
-drf-yasg-json-api = "^0.9.1"
-djangorestframework-jsonapi = {extras = ["openapi"], version = "^5.0.0"}
 django-debug-toolbar = "^3.2.4"
 django-oauth-toolkit = "^1.7.1"
+djangorestframework = "3.13.0"
+djangorestframework-jsonapi = {extras = ["openapi"], version = "^5.0.0"}
+drf-yasg = "^1.20.0"
+drf-yasg-json-api = "^0.9.1"
+python = "^3.8"
+PyYAML = "^6.0"
 rest_condition = "^1.0.3"
 
 [tool.poetry.dev-dependencies]
